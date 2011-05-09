@@ -1,0 +1,40 @@
+[WARNING: This project is not yet ready for proper use. Its very much an alpha at the moment]
+
+*** Installation
+
+$ gem install jsmetric
+
+
+*** Usage
+
+Cyclometric complexity for a file:
+$ ./bin/jsmetric path_to_js_file
+
+Cyclometric complexity for all .js files in a Directory
+$ ./bin/jsmetric path_to_dir
+
+
+
+*** Backlog/Future Work
+
+- JSLint options are buried in the options.js file. Need to pull these out.
+- Refactor the nasty code in the complexity analyser
+- Add Debug messages for when a JS file fails JSLint validation
+
+
+[Notes for developing JSMetric itself futher]
+
+*** To get started you need:
+
+Ruby 1.9.2
+Bundler 1.x
+
+This project contains a .rvmrc file for use with RVM.
+
+*** Setting up dev environment
+
+$ ./build
+
+*** Dev smoke
+
+$ ./bin/jsmetric features/sample_js_files_for_test/foobar.js
