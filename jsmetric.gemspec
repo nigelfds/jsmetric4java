@@ -20,4 +20,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency('therubyrhino', '1.72.7 ')
+  s.add_dependency('bundler', '1.0.13 ')
+  s.add_dependency('json', '1.5.1')
 end
