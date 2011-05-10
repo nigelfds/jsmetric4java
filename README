@@ -2,7 +2,7 @@
 
 Dependencies: (Jruby 1.6.1 or greater)
 
-*** Installation (Assuming jruby)
+*** Installation (Assuming jruby is your default)
 
 $ gem install jsmetric4java
 
@@ -10,13 +10,23 @@ $ gem install jsmetric4java
 *** Usage
 
 Cyclometric complexity for a file:
-$ ./bin/jsmetric4java path_to_js_file
+$ jsmetric4java path_to_js_file
 
 Cyclometric complexity for all .js files in a Directory
-$ ./bin/jsmetric4java path_to_dir
+$ jsmetric4java path_to_dir
 
-*** Usage with JRUBY Complete jar
 
-Download the Jruby Complete.jar (http://www.jruby.org/download)
-$ java -jar jruby-complete-1.6.1.jar -S gem install jsmetric4java
-$ java -jar jruby-complete-1.6.1.jar -S jsmetric4java path/to/js/dir
+*** Usage with JRUBY 
+ 
+Download Jruby 1.6.x (http://www.jruby.org/download)
+Extract JRuby into a directory.
+Add that directory's bin subdirectory to the end of your path.
+
+Test it: 
+$ jruby -v
+
+Install Jsmetric4Java
+$ jruby -S gem install jsmetric4java
+
+Use Jsmetric4java
+$ jsmetric4java path/to/js/dir
